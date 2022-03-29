@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e # exit script on error
 for files in "$@"; do
 
     if [ -e $files ]; then     # -e 'FILE exists'
