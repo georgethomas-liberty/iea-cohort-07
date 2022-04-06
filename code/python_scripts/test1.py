@@ -10,9 +10,9 @@ print(man)
 
 
 age = int(0x2B)
-print("RJ is", age)
+print("JR is", age)
 """
-
+"""
 list = [1, 2, 3, 4, 5]
 list.append(7)
 list.insert(0, 8)
@@ -24,3 +24,6 @@ print(list)
 list.reverse()
 
 print(list)
+"""
+
+print(2 + 3 == 6)
