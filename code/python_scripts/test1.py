@@ -27,3 +27,5 @@ print(list)
 """
 
 print(2 + 3 == 6)
+
+import __future__
