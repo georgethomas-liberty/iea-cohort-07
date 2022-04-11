@@ -26,9 +26,17 @@ list.reverse()
 print(list)
 """
 
-#print(2 + 3 == 6)
+# print(2 + 3 == 6)
 
-#import __future__
+# import __future__
 import calendar
 import datetime
-import 
+import math
+
+
+string = 0
+while len(str(string)) != 5:
+    string = input("enter a 5-letter string: ")
+    print(f"{string} is not 5 letters ")
+else:
+    print(f"{string} is 5 letters ")
