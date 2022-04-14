@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import random
 
 list1 = ["green", "blue", "red", "yellow", "white", "brown", "orange", "purple"]
