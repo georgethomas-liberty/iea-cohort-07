@@ -1,4 +1,5 @@
 from ast import Break, Continue
+from tokenize import Number
 import inquirer, os, sys, re
 from pprint import pprint
 from inquirer import errors
@@ -48,7 +49,7 @@ questions = [
     ),
 ]
 
-# answers = inquirer.prompt(questions)
+answers = inquirer.prompt(questions)
 
 while answers["size"] != "Quit":
     answers = inquirer.prompt(questions)
@@ -57,11 +58,15 @@ while answers["size"] != "Quit":
         print(f"List of vegetables\n {vegetables}")
 
     elif answers["size"] == "Add a fruit":
+        fruits.sort()
+        print(f"List of Fruits\n {fruits}")
         Add_fruit = input("Please enter a fruit you would like added to the list. ")
         fruits.append(Add_fruit)
         print(f"List of Fruits\n {fruits}")
 
     elif answers["size"] == "Add a vegetable":
+        vegetables.sort()
+        print(f"List of vegetables\n {vegetables}")
         Add_veg = input("Please enter a vegetables you would like added to the list. ")
         vegetables.append(Add_veg)
         print(f"List of vegetables\n {vegetables}")
@@ -77,8 +82,9 @@ while answers["size"] != "Quit":
         vegetables.sort()
         print(f"List of vegetables\n {vegetables}")
         Rem_veg = input(
-            "Please enter a vegetables you would like removed from the list. "
+            "Please enter the name or index of a vegetables you would like removed from the list. "
         )
+        # if Rem_veg == Number:
         vegetables.remove(Rem_veg)
         print(f"List of vegetables\n {vegetables}")
 
