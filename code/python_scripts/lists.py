@@ -84,7 +84,7 @@ while answers["size"] != "Quit":
         Rem_veg = input(
             "Please enter the name or index of a vegetables you would like removed from the list. "
         )
-        # if Rem_veg == Number:
+        # if Rem_veg :
         vegetables.remove(Rem_veg)
         print(f"List of vegetables\n {vegetables}")
 
