@@ -1,6 +1,8 @@
 import os
 import random
 
+from matplotlib import lines
+
 path = "code/python_scripts/"
 
 choosefile = []
@@ -18,7 +20,7 @@ filewrite = os.path.join(path, outfilename)
 
 with open(filewrite, "w") as outfile:
 
-    for line in infilename:
+    for line in fileread:
         outfile.write(line + "\n")
 
 fileread.close()
