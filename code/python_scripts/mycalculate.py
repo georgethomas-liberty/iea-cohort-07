@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import operator
 import math
-import sys
 
 
 def calculate(num1, num2, op):
@@ -31,15 +30,3 @@ def calculate(num1, num2, op):
             return None
         else:
             return result
-
-
-if len(sys.argv) < 4:
-    exit("Usage: " + sys.argv[0] + " OPERAND OPERAND OPERATOR")
-
-num1 = float(sys.argv[1])
-num2 = float(sys.argv[2])
-op = sys.argv[3]
-
-answer = calculate(num1, num2, op)
-
-print(answer)
