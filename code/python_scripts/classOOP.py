@@ -23,7 +23,7 @@ class calc:
         return self.total
 
     def log(self, num1, num2):
-        result = math.log(self.num1) / math.log(self.num2)
+        result = math.log(num1) / math.log(num2)
 
     def pow(self):
         pass
