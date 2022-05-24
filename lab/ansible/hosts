@@ -1,0 +1,9 @@
+[web]
+student9-1
+student9-2
+
+[db]
+student9-2
+
+[all:vars]
+ansible_connection=ssh
