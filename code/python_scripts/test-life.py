@@ -24,3 +24,7 @@ def test_life_empty_next_generation():
 
     game = Life(grid)
     next_gen = game.next_generation()
+
+    assert next_gen == expected
+
+def test_life_next_generation

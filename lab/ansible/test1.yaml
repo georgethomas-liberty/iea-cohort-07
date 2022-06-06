@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+  - name: Install the cowsay package
+    apt:
+      name: cowsay
+      state: present
+  - name: test the cowsay command
+    command: Cowsay This works. Moo!

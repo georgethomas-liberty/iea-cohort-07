@@ -1,14 +1,11 @@
 import os
 from unicodedata import name
+from unittest.mock import patch
 
 
-def read_string(your_string):
-    value = os.getenv("DATABASE_HOST", your_string)
+def read_string():
+    value = os.getenv("DATABASE_HOST")
     print(value)
 
-
-# os.getenv
-# testname = os.getenv("DATABASE_HOST", "localhost")
-# print(testname)
 
 read_string()

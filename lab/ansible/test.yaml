@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars:
+    Mymesage: Hello World! 
+  tasks:
+  - name: check connectivity for my host
+    ping:
+  #- name: Print out a user message
+  #  debug:
+  #    msg = "{{Mymesage}}"
